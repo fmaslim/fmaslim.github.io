@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Franky Lin | SaaS Product Portfolio</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #0b1120;
+            color: #f8fafc;
+        }
+
+        .container {
+            width: min(1000px, 90%);
+            margin: auto;
+        }
+
+        header {
+            padding: 80px 0 50px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 12px;
+            font-size: 44px;
+        }
+
+        header p {
+            max-width: 650px;
+            margin: auto;
+            color: #94a3b8;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 24px;
+            padding-bottom: 70px;
+        }
+
+        .card {
+            background: #111827;
+            border: 1px solid #263244;
+            border-radius: 16px;
+            padding: 28px;
+        }
+
+        .card h2 {
+            margin-top: 0;
+        }
+
+        .card p {
+            color: #94a3b8;
+            line-height: 1.6;
+        }
+
+        .status {
+            display: inline-block;
+            margin-bottom: 14px;
+            padding: 6px 12px;
+            border-radius: 999px;
+            background: #1e293b;
+            color: #93c5fd;
+            font-size: 13px;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 12px;
+            padding: 11px 18px;
+            border-radius: 8px;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background: #1d4ed8;
+        }
+
+        footer {
+            border-top: 1px solid #263244;
+            padding: 28px 0;
+            text-align: center;
+            color: #64748b;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container">
+        <h1>Franky Lin</h1>
+
+        <p>
+            Technical Product Owner and .NET Azure developer building practical
+            SaaS products, automation tools, and digital media platforms.
+        </p>
+    </header>
+
+    <main class="container">
+        <section class="products">
+
+            <article class="card">
+                <span class="status">Live SaaS Product</span>
+
+                <h2>RepurposePilot</h2>
+
+                <p>
+                    Turn one script into reusable content for YouTube, Medium,
+                    Gumroad, podcasts, and social media.
+                </p>
+
+                <a class="button" href="#" target="_blank">
+                    View RepurposePilot
+                </a>
+            </article>
+
+            <article class="card">
+                <span class="status">Coming Soon</span>
+
+                <h2>DocIQ</h2>
+
+                <p>
+                    Upload a PDF and receive a clear, useful one-page document
+                    summary.
+                </p>
+            </article>
+
+            <article class="card">
+                <span class="status">Media Ecosystem</span>
+
+                <h2>The Case Study Lab</h2>
+
+                <p>
+                    Business history, corporate collapses, financial scandals,
+                    and lessons from major companies.
+                </p>
+
+                <a class="button" href="#" target="_blank">
+                    Explore the Channel
+                </a>
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+        © 2026 Franky Lin · Built with GitHub Pages
+    </footer>
+</body>
+</html>
