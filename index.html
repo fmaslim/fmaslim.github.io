@@ -279,5 +279,26 @@
     <footer>
         © 2026 Franky Lin · Built with GitHub Pages
     </footer>
+    <script>
+        document.addEventListener('click', function (event) {
+            const link = event.target.closest('a[href]');
+
+            if (!link) {
+                return;
+            }
+
+            const linkUrl = new URL(link.href, window.location.href);
+
+            if (linkUrl.origin === window.location.origin || typeof window.gtag !== 'function') {
+                return;
+            }
+
+            window.gtag('event', 'hub_link_click', {
+                link_text: link.textContent.trim(),
+                link_url: link.href,
+                transport_type: 'beacon'
+            });
+        });
+    </script>
 </body>
 </html>
